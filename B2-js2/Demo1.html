@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<.html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi tiền để làm gì</title>
+
+</head>
+<body>
+    <form action="#">
+        <table align="center">
+            <tr>
+                <td>Số tiền</td>
+                <td>Từ tiền tệ</td>
+                <td>Đến tiền tệ</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="st"></td>
+                <td>
+                <select id="Form">
+                    <option value="vnd">VND</option>
+                    <option value="usd">USD</option>
+                    <option value="ndt">Tệ</option>
+                </select>
+                </td>
+                <td>
+                <select id="To">
+                    <option value="usd">USD</option>
+                    <option value="vnd">VND</option>
+                    <option value="ndt">Tệ</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="Chuyendoi()">xác nhận</button></td>
+            </tr>
+        </table>
+        <p align="center" id="Result"></p>
+    </form>
+    <script src="Demo1.js"></script>
+</body>
+</.html>
