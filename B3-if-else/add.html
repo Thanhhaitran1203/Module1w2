@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tổng 2 số có nhỏ hơn 4</title>
+</head>
+<body>
+<label>Số thứ 1</label><input id="number1" type="number">
+<br><label>Số thứ 2</label><input id="number2" type="number">
+<button onclick="ktra()">Kiểm tra</button>
+    <script>
+
+    function ktra() {
+        let number1 = +document.getElementById("number1").value;
+        let number2 = +document.getElementById("number2").value;
+        let sum = (number1 + number2);
+        result = (number1 + number2 < 4) ? "Below" : "Over";
+        document.write(result);
+    }
+</script>
+
+</body>
+</html>
