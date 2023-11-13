@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi</title>
 </head>
 <body>
-$END$
+<input type="number" id="feet"><label for="feet"> Feet = </label>
+<input id="m"><label for="m"> Mét</label> <br>
+<button onclick="convert()" >Convert</button>
+<script !src="">
+    function  convert() {
+        let feet = +document.getElementById('feet').value;
+        let m = feet * 3.2808;
+        document.getElementById('m').value= m.toFixed(4) ;
+    }
+</script>
 </body>
 </html>
