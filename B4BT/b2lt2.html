@@ -5,14 +5,14 @@
     <title>Chuyển đổi</title>
 </head>
 <body>
-<input type="number" id="feet"><label for="feet"> Feet = </label>
-<input id="m"><label for="m"> Mét</label> <br>
+<input type="number" id="m"><label for="m"> Met = </label>
+<input id="feet"><label for="feet"> Feet</label> <br>
 <button onclick="convert()" >Convert</button>
-<script !src="">
+<script>
     function  convert() {
-        let feet = +document.getElementById('feet').value;
-        let m = feet * 3.2808;
-        document.getElementById('m').value= m.toFixed(4) ;
+        let m = +document.getElementById('m').value;
+        let feet = m / 3.2808;
+        document.getElementById('feet').value= feet.toFixed(4) ;
     }
 </script>
 </body>

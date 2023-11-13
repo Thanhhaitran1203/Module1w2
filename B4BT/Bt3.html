@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng</title>
+</head>
+<body>
+<label for="weight">Cân nặng </label> <input type="number" id="weight"></input> <br>
+<label for="height">Chiều cao </label> <input type="number" id="height"></input> <br>
+<p onclick="tinh()">Kiểm tra</p>
+<script>
+    function tinh(){
+        let weight = +document.getElementById("weight").value;
+        let height = +document.getElementById("height").value;
+        let bmi = weight / (height*height);
+        if (bmi<18){
+            alert("Bạn hơi gầy");
+        }else if(bmi<25){
+            alert("Bạn cân đối");
+        }else if(bmi<30) {
+            alert("Bạn hơi béo");
+        }else {
+            alert("Bạn quá béo");
+        }
+    }
+</script>
+</body>
+</html>
